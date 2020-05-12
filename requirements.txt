@@ -1,0 +1,19 @@
+torch==1.4.0
+torchvision==0.5.0
+pydicom==1.4.2
+pylidc==0.2.1
+SimpleITK==1.2.4
+torchnet==0.0.4
+h5py==2.10.0
+tensorboard==1.14.0
+ninja==1.9.0.post1
+medpy==0.4.0
+mdai==0.4.1
+timm==0.1.20
+pretrainedmodels==0.7.4
+efficientnet_pytorch==0.6.3
+matplotlib==3.1.2
+seaborn==0.9.0
+batchgenerators==0.20.1
+scikit-image==0.14.2
+-e git://github.com/ElementAI/haven.git#egg=haven
