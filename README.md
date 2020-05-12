@@ -4,7 +4,7 @@
 
 --------------------------------------------------------------------------------
 
-L3-Net is an open source segmentation and classification model for analyzing COVID-19 infections in chest CT-Scans. The percentage of lung involvement is a critical metric that is difficult to accurately measure without advanced software tools. We hope that utilizing a machine to accurately calculate the lung involvement ratio and absolute volume will be a valuable metric for researchers to use to prognosticate patients with COVID-19 and other respiratory illnesses. Recent literature suggests that the percentage of Well-Aerated-Lung correlates to clinical outcomes, such as the need for ventilator support, ICU admission and death.
+L3-Net is an open source segmentation and classification model for analyzing COVID-19 infections in chest CT-Scans. The percentage of lung involvement is a valuable metric that is difficult to accurately measure without advanced software tools. We hope that utilizing a machine to accurately calculate the lung involvement ratio and absolute volume will be a valuable metric for researchers to use to prognosticate patients with COVID-19 and other respiratory illnesses. Recent literature suggests that the percentage of Well-Aerated-Lung correlates to clinical outcomes, such as the need for ventilator support, ICU admission and death.
 
 |Index| Description|
 |:----------------|:-----------|
