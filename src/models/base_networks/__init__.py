@@ -20,11 +20,8 @@ def get_base(base_name, exp_dict, n_classes):
         assert net_fn is not None
 
         base = smp.PSPNet(encoder_name=exp_dict['model']['encoder'],
-                          in_channels= exp_dict['num_channels'],
-                          encoder_weights= None,  # ignore error. it still works.
-                           classes= n_classes,
-                           psp_use_batchnorm=False,
-                           psp_dropout=0.5)
+                          in_channels=exp_dict['num_channels'],
+                          encoder_weights=None,  # ignore error. it still works.
+                          classes=n_classes)
 
     return base
-
