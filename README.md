@@ -9,12 +9,12 @@ L3-Net is an open source segmentation and classification model for analyzing COV
 |Index| Description|
 |:----------------|:-----------|
 | [Demo](#demo)         |     Interact with L3-Net's predictions on a set of CT-Scans.    | 
-| [1. Overview](#1.-overview)         |     See the motivation behind this project.    | 
-| [2. Experiments](#2.-experiments)         |    Download our weights and run experiments. |
-| [3. Timeline](#3.-timeline)       |     Checkout our plans.   |
-| [4. Authors](#4.-authors)      |     Meet the team behind this.     |
-| [5. Changelog](#5.-changelog)      |     History of what has changed.     |
-| [6. License](#6-license)      |     License details.     |
+| [Overview](#overview)         |     See the motivation behind this project.    | 
+| [Experiments](#experiments)         |    Download our weights and run experiments. |
+| [Timeline](#timeline)       |     Checkout our plans.   |
+| [Authors](#authors)      |     Meet the team behind this.     |
+| [Changelog](#changelog)      |     History of what has changed.     |
+| [License](#license)      |     License details.     |
 
 # Demo
 Visit the link to the [demo](https://cic.ubc.ca/projects/open-source-ai-model-for-covid-19-ct-diagnostics-and-prognosis/covid-19-ai-tool-demo/) and display L3-Net's predictions on a variety of CT-Scans. 
@@ -25,7 +25,7 @@ This demo displays the predictions from our 2D UNet model on a random sampling o
 A snapshot from the demo showing infected regions on a ct-scan slice.
 </p>
 
-# 1. Overview
+# Overview
 
 We have worked with health centers around the world to put together one of the largest international COVID19 chest CT scan datasets.  By making the model architectures, training routines, and pre-trained weights available, we are hoping to make this model digestable for researchers and health centres around the world. This repository will contain code and weights for networks that we have trained for the segmentation and classification of COVID19 using a variety of 2D and 3D architectures. Labelling is an ongoing process, so as we continue to collect and annotate new data we will update this repository with our latest models.
 
@@ -113,7 +113,7 @@ In addition to the 2D UNet, we are releasing the weights for a trained Pyramid S
 
 <img src="docs/confusion_test_label_corrected_pspnet.png" alt="test_cf_pspnet" width="500"/>
 
-# 3 Experiments
+# Experiments
 Due to privacy restrictions we are unable to release our data, however for your convenience we have included this demonstration of how to load our pre-trained models and fine tune them on publically available data. Our models were trained on DICOM files that use Houndsfield Units, which were clipped to a lung window between -1000 and 50 Hu. These publically available scans have been converted to images and are no longer in DICOM format or Houndsfield Units, so we need to first fine tune the model to account for the distribution shift. The open source scans have only been labelled for ground glass opacification and consolidation.
 
 ## 3.1 Install dependencies
@@ -216,7 +216,7 @@ python test.py -e open_source_<model> -d <datadir> -sb <savedir_base> -p <model_
 ```
 
 
-# 4. Timeline
+# Timeline
 
  - [x] May 12, 2020 - Alpha prototype v0.1 release on Github
 
@@ -230,14 +230,14 @@ python test.py -e open_source_<model> -d <datadir> -sb <savedir_base> -p <model_
 
  - [ ] June 2021 - Health Canada Approval Attempt
  
-# 5. Authors
+# Authors
 
 The key contributors to this repository are Keegan Lensink, Issam Laradji, and Marco Law.  Other members of the team include Paolo Emilio Barbanos, a Senior Machine Learning Engineer from the AWS Machine Learning team and Brian Lee of Sapien ML.
 
-# 6. Changelog
+# Changelog
 
  - May 12, 2020:  Initial release, segmentation models and weights
  
-## 6. License
+## License
  
 This project is distributed under the [Apache License 2.0](https://github.com/UBC-CIC/vgh-covid-19-ct-model/blob/master/LICENSE)
