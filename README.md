@@ -17,8 +17,9 @@ L3-Net is an open source segmentation and classification model for analyzing COV
 | [License](#license)      |     License details.     |
 
 # Demo
-Visit the link to the [demo](https://cic.ubc.ca/projects/open-source-ai-model-for-covid-19-ct-diagnostics-and-prognosis/covid-19-ai-tool-demo/) and display L3-Net's predictions on a variety of CT-Scans. 
-This demo displays the predictions from our 2D UNet model on a random sampling of our test set after they have been processed using an automatically generated mask. This mask is calculated by finding the two largest connected components in the predictions for the entire scan, which correspond to the right and left lung with a high probability.
+View the predictions from the Phase 2 model (soft-labelling) on your own CT scan using the [online dashboard](https://cic.ubc.ca/projects/open-source-ai-model-for-covid-19-ct-diagnostics-and-prognosis/phase-3-version-2/). 
+If you don't have a CT scan of your own, you can try using `example_scan.zip`, which is an anonymized CT scan we have included. 
+You can also view the Phase 1 model (hard-labelling) predictions on a vareity of scans at the online [demo](https://cic.ubc.ca/projects/open-source-ai-model-for-covid-19-ct-diagnostics-and-prognosis/covid-19-ai-tool-demo/). 
 
 <p align="center">
 <img src="docs/demo.png"  alt="test_preds" width="100%"/>
