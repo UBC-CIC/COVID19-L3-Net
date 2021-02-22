@@ -91,8 +91,6 @@ As of May 12, 2020, the dataset used for training the supplied weights consists 
 
 # 2. Models
 
-<img src="docs/meme.jpg" alt="test_preds" width="500"/>
-
 ---
 
 ## 2D UNet
@@ -142,7 +140,9 @@ Extract this .zip exactly the way it is into a folder of your choice.
 
 Download our weights and put them into the `checkpoints` directory in the repository.
 
-UNet2D Weights : https://s3.ca-central-1.amazonaws.com/ubccic.covid19.models/unet2d_aio_pre_luna.ckpt
+UNet2D Weights (Phase 1 Hard Labels) : https://s3.ca-central-1.amazonaws.com/ubccic.covid19.models/unet2d_aio_pre_luna.ckpt
+
+UNet2D Weights (Phase 2 Soft Labels) : https://s3.ca-central-1.amazonaws.com/ubccic.covid19.models/phase2_model.ckpt
 
 PSPNet Weights : https://s3.ca-central-1.amazonaws.com/ubccic.covid19.models/pspnet_aio_lungwindow_1channel.ckpt
 
