@@ -27,7 +27,7 @@ class OpenSource(torch.utils.data.Dataset):
 
         self.img_tgt_dict = []
         for tgt_name in os.listdir(self.tgt_path):
-            lung_name = os.path.join(self.lung_path, tgt_name)
+            lung_name = tgt_name
             scan_id, slice_id = tgt_name.split('_')
             slice_id = str(int(slice_id.replace('z', '').replace('.png', ''))).zfill(4)
             img_name = [f for f in os.listdir(os.path.join(self.img_path, 
