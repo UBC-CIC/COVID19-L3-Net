@@ -6,7 +6,6 @@ __pycache__
 
 __pycache__/
 .vscode/
-*.ckpt
 
 results/*.ipynb
 results/*.ipynb*
