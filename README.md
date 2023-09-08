@@ -128,7 +128,7 @@ This command installs the required packages the [Haven library](https://github.c
 ## 3.2 Run Experiments
 
 
-### i. Download the open-source covid dataset
+### i. Extract the open-source covid dataset
 
 This dataset was supplied by MedicalSegmentation.com.  We have transformed their NIFTI files to DCM and their masks into PNGs and supplied a dataloader for this set.  We've included this as a way to get our repository up and running and tested against something right away!
 
@@ -138,7 +138,7 @@ Extract this .zip exactly the way it is into a folder of your choice.
 
 ### ii. Locate model weights
 
-Our weights are located in the 'models' folder of this repository. Create and put them into a `checkpoints` directory.
+Our weights are located in the 'models' folder of this repository.
 
 UNet2D Weights (Phase 1 Hard Labels) : models/unet2d_aio_pre_luna.ckpt
 
