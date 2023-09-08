@@ -132,19 +132,19 @@ This command installs the required packages the [Haven library](https://github.c
 
 This dataset was supplied by MedicalSegmentation.com.  We have transformed their NIFTI files to DCM and their masks into PNGs and supplied a dataloader for this set.  We've included this as a way to get our repository up and running and tested against something right away!
 
-Download link: https://s3.ca-central-1.amazonaws.com/ubccic.covid19.models/L3netDemoData.zip
+Demo Data Files: /L3netDemoData.zip
 
 Extract this .zip exactly the way it is into a folder of your choice.
 
-### ii. Download our model weights
+### ii. Locate model weights
 
-Download our weights and put them into the `checkpoints` directory in the repository.
+Our weights are located in the 'models' folder of this repository. Create and put them into a `checkpoints` directory.
 
-UNet2D Weights (Phase 1 Hard Labels) : https://s3.ca-central-1.amazonaws.com/ubccic.covid19.models/unet2d_aio_pre_luna.ckpt
+UNet2D Weights (Phase 1 Hard Labels) : models/unet2d_aio_pre_luna.ckpt
 
-UNet2D Weights (Phase 2 Soft Labels) : https://s3.ca-central-1.amazonaws.com/ubccic.covid19.models/phase2_model.ckpt
+UNet2D Weights (Phase 2 Soft Labels) : models/phase2_model.ckpt
 
-PSPNet Weights : https://s3.ca-central-1.amazonaws.com/ubccic.covid19.models/pspnet_aio_lungwindow_1channel.ckpt
+PSPNet Weights : models/pspnet_aio_lungwindow_1channel.ckpt
 
 ### iii. Run training and validation
 
